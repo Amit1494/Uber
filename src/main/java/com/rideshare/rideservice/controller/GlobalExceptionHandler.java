@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.util.Map;
 
 @RestControllerAdvice
+
 @Slf4j
 public class GlobalExceptionHandler {
     public ResponseEntity<Map<String,String>> handleValidation(
             MethodArgumentNotValidException ex
     ){
-        Map<String,String> errors=HashMap<>();
+        Map<String,String> errors= new HashMap<>();
     }
 
 }
